@@ -40,9 +40,12 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'django_summernote',
-    'articleApi'
+    'articleApi',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
+    'robots'
 ]
-
+SITE_ID = 1
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
