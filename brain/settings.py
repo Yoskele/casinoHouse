@@ -41,9 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_summernote',
     'articleApi',
-    # 'django.contrib.sitemaps',
-    # 'django.contrib.sites',
-    # 'robots'
+    'django.contrib.sitemaps',
 ]
 SITE_ID = 1
 MIDDLEWARE = [

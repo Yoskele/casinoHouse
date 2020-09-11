@@ -15,6 +15,12 @@ class ArticlePost(models.Model):
             self.slug,
         )
 
+    # # This is for the sitemap.
+    def get_absolute_url(self):
+        return '/artikel/{}'.format(
+            self.slug
+        )
+
 
 class Casino(models.Model):
     slug = models.CharField(max_length=100, unique=True)
@@ -32,6 +38,11 @@ class Casino(models.Model):
             self.name
         )
 
+    def get_absolute_url(self):
+        return '/recension/{}'.format(
+            self.slug
+        )
+
 
 class GameSupplier(models.Model):
     slug = models.CharField(max_length=100, unique=True)
@@ -45,4 +56,9 @@ class GameSupplier(models.Model):
     def __str__(self):
         return(
             self.name
+        )
+
+    def get_absolute_url(self):
+        return '/speltillverkare/{}'.format(
+            self.slug
         )
