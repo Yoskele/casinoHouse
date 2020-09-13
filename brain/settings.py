@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'django_summernote',
+    'ckeditor',
+    'ckeditor_uploader',
     'articleApi',
     'django.contrib.sitemaps',
 ]
@@ -147,9 +148,9 @@ REST_FRAMEWORK = {
     ]
 }
 
+CKEDITOR_UPLOAD_PATH = 'uploads/ckeditorImages'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-SUMMERNOTE_THEME = 'bs4'
 
 CORS_ORIGIN_ALLOW_ALL = True
